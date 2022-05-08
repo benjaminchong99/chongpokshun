@@ -29,56 +29,11 @@ html {
     margin-top: 3%;
   }
 
-span.intro {
-    display: none;
-    justify-content: space-between;
-    font-size:300%;
-    overflow: hidden;
-    text-align: center;
-    transform: translateY(50%);
-
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
 .typewords {
   margin: 0 auto;
   /* margin-top: 5%; */
   border-right: 3px solid rgba(255,255,255,.75);
-  font-size: 300%;
+  font-size: 50px;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -105,8 +60,6 @@ span.intro {
 
 .navbar {
     list-style-type: none;
-    border-radius: 50px;
-    margin: 1%;
     margin-top: 6%;
     padding: 0;
     top: 0;
@@ -137,7 +90,7 @@ span.intro {
   }
 
 .navbar:hover {
-    box-shadow: 0px 0px 25px rgba(255, 255, 255);
+    box-shadow: 0px 0px 35px rgba(255, 255, 255);
   }
 
 /************************************************/
@@ -146,16 +99,14 @@ span.intro {
 
 .aboutmemarker{
   display: flex;
-  justify-content: flex-start
-}
-
-#aboutme {
-  margin-bottom: 10px;
+  justify-content: flex-start;
+  padding-top: 50px;
 }
 
 .markers {
-    color: #27272c;
-    margin-bottom: 50px;
+  display: none;
+  color: #27272c;
+  margin-bottom: 50px;
 }
 
 #profilepic {
@@ -388,7 +339,7 @@ border-color: white;
 /************************************************/
 
 .showcase{
-  margin-top:8%;
+  padding-top: 50px;
 }
 .projectlist {
   display: flex;
@@ -478,8 +429,11 @@ border-color: white;
 /******************* TIMELINE *******************/
 /************************************************/
 
-.history {
-  margin-top:8%;
+#timeline {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 200px;
+  padding-bottom: 50px;
 }
 
 .storytemp {
@@ -621,7 +575,7 @@ border-color: white;
   text-align: center;
   margin-top:3%;
   font-size: 30px;
-  margin-bottom:5%;
+  margin-bottom:2%;
 }
 
 .thankyou a{
