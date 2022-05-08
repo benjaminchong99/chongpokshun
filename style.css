@@ -1,0 +1,631 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-family: 'Jua', sans-serif;
+    scroll-behavior: smooth;
+    background-color:#27272c;
+    color: white;
+  }  
+
+  .temp {
+    font-size:20px;
+    color: white
+}
+
+/************************************************/
+/**************** LOGO AND START ****************/
+/************************************************/
+.headerlogo {
+    display: flex;
+    justify-content: space-between;
+}
+#plogo {
+    max-width: 25%;
+    max-height: 25%;
+    margin: auto;
+    margin-top: 3%;
+  }
+
+span.intro {
+    display: none;
+    justify-content: space-between;
+    font-size:300%;
+    overflow: hidden;
+    text-align: center;
+    transform: translateY(50%);
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.typewords {
+  margin: 0 auto;
+  /* margin-top: 5%; */
+  border-right: 3px solid rgba(255,255,255,.75);
+  font-size: 300%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(50%);
+}
+
+/* Animation */
+.animatedtype{
+    animation: typewriter 2s steps(44) 1s 1 normal both,
+               blinkTextCursor 0.75s steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 15em;} /* decides where to stop */
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+/************************************************/
+/******************** NAV BAR *******************/
+/************************************************/
+
+.navbar {
+    list-style-type: none;
+    border-radius: 50px;
+    margin: 1%;
+    margin-top: 6%;
+    padding: 0;
+    top: 0;
+    block-size: 100px;
+    overflow: hidden;
+    background-color: rgb(232, 96, 28);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    transition: box-shadow .2s;
+    transition-duration: 1s;
+  }
+  
+  .navbarc {
+    float: left;
+    margin:auto;
+  }
+
+  .navbarc a {
+    color: white;
+    text-align: center;
+    padding: 50px 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+.navbar:hover {
+    box-shadow: 0px 0px 25px rgba(255, 255, 255);
+  }
+
+/************************************************/
+/******************** ABT ME ********************/
+/************************************************/
+
+.aboutmemarker{
+  display: flex;
+  justify-content: flex-start
+}
+
+#aboutme {
+  margin-bottom: 10px;
+}
+
+.markers {
+    color: #27272c;
+    margin-bottom: 50px;
+}
+
+#profilepic {
+    max-width: 30%;
+    max-height: 20%;
+    /* display: block; */
+    /* margin-right: auto; */
+    margin-top: 10%;
+    margin-left: 30px;
+  }
+
+.description {
+  color:rgba(245, 245, 245, 0.775);
+  margin-top: 10%;
+  padding: 20px;
+  margin-left: 30px;
+  font-size: 25px;
+
+}
+
+.question {
+  font-size: 35px;
+  color:white;
+}
+
+/************************************************/
+/***************** CORECOMPASS ******************/
+/************************************************/
+.aboutme2 h2, .skillsheader {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 4%;
+  margin-bottom: 2%;
+
+}
+
+.abtme21 {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+}
+
+.abtme21 p {
+  min-width: 250px;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: double 4px transparent;
+  background-image: linear-gradient( #27272c, #27272c), linear-gradient(to right, #ff512f  , #dd2476);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  text-align: center;
+}
+/************************************************/
+/******************** EM BH *********************/
+/************************************************/
+.rounded {
+  border-top: 8px solid snow;
+  border-radius: 5px;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutme3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.exmind, .belheart{
+  margin: 7% 5% 5% 5%;
+  max-width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  border: double 4px transparent;
+  background-image: linear-gradient( #27272c, #27272c), linear-gradient(to right, #dd2476  , #ff512f);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: box-shadow .5s border-style .5s;
+  transition-duration: 1s;
+}
+
+.exmind:hover, .belheart:hover{
+  box-shadow: 0px 0px 50px rgba(255, 255, 255);
+}
+
+.exmind h2, .belheart h2{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 3%;
+}
+
+.exmind h3, .belheart h3{
+  text-align: center;
+  font-size: 25px;
+}
+.exmind p, .belheart p{
+  text-align: left;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.imgine {
+  width: 200px;
+  height: 200px;
+  bottom: 10px;
+}
+
+.skillset {
+  font-size: 25px;
+}
+
+.allskills{
+  margin: 1% 5% 3% 5%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid;
+border-color: white;
+}
+
+.allskills h3{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  text-align: left;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+}
+
+#progressbarpy, #progressbarjhs, #progressbarjava, #progressbarai, #progressbarapp, #progressbarmo {
+  background-color: white;
+  border-radius: 10px;
+  /* (height of inner div) / 2 + padding */
+  padding: 5px;
+  width: 30%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 50%
+}
+
+/* PROGRESS BARS */
+#progressbarpy>div {
+  background-color: orange;
+  width: 70%;
+  border-radius: 10px;
+}
+#progressbarjhs>div {
+  background-color: orange;
+  width: 60%;
+  border-radius: 10px;
+}
+#progressbarjava>div {
+  background-color: orange;
+  width: 50%;
+  border-radius: 10px;
+}
+#progressbarai>div {
+  background-color: orange;
+  width: 70%;
+  border-radius: 10px;
+}
+#progressbarapp>div {
+  background-color: orange;
+  width: 60%;
+  border-radius: 10px;
+}
+#progressbarmo>div {
+  background-color: orange;
+  width: 85%;
+  border-radius: 10px;
+}
+/************************************************/
+/***************** NOT SO IMPT ******************/
+/************************************************/
+
+#headerstory {
+  text-align: center;
+  font-size: 50px;
+  padding: 40px;
+  margin-top: 7%;
+}
+
+/* button bottom right */
+#goupbutton {
+  display: none; /*Hidden by default*/
+  position: fixed; /* Fixed/sticky position */
+  max-width: 15%;
+  max-height: 15%;
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 100; /* Make sure it does not overlap */
+  border: none; 
+  outline: none; 
+  color: gray; 
+  cursor: pointer; /* Change to mouse pointer on hover */
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+.rounded3 {
+  border-radius: 10px;
+  border: double 8px transparent;
+  background-image: linear-gradient( #ED765E, #FEA858), linear-gradient(to right, #ED765E  , #FEA858);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  width: 90%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#firstline{
+  margin-top:5%;
+}
+
+/************************************************/
+/**************** PROJECT SHOWCASE **************/
+/************************************************/
+
+.showcase{
+  margin-top:8%;
+}
+.projectlist {
+  display: flex;
+  margin: 0 auto;
+}
+
+.projcat {
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.projschb {
+  border: 1px solid #FFF44F;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.projsch {
+  border: 1px solid #EEE600;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  width: 33%;
+  transition: box-shadow .5s;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+}
+
+.projperb {
+  border: 1px solid #a8e063;
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+.projper {
+  border: 1px solid #56ab2f ;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  width: 33%;
+  transition: box-shadow .3s;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+}
+
+.projotherb {
+  border: 1px solid lightskyblue;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.projother {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 180);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  width: 33%;
+  transition: box-shadow .2s;
+  transition-duration: 1s;
+}
+
+.projtitle {
+  font-size: 20px;
+}
+
+.projschb:first-child,
+.projperb:first-child,
+.projotherb:first-child{
+  margin-left: 2%;
+}
+
+.projsch:hover,
+.projper:hover,
+.projother:hover{
+  box-shadow: 0 0 40px rgba(255, 255, 255);
+  background-color:#27272c;
+}
+
+/************************************************/
+/******************* TIMELINE *******************/
+/************************************************/
+
+.history {
+  margin-top:8%;
+}
+
+.storytemp {
+  display: flex;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.pathway {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pathway ul{
+  list-style: none;
+}
+
+.pathway li{
+  /* padding: 20px; */
+  background-color: #27272c;
+  border-radius: 10px;
+  border-style: solid;
+  margin-bottom: 30px;
+}
+
+.pathway ul li:last-child{
+  margin-bottom: 0;
+}
+
+.pathwaycontent h3{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.pathwaycontent p {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.pathwaycontent p a, .projsch a {
+  color: lightskyblue;
+}
+
+@media only screen and (min-width: 768px) {
+  .pathway::before{
+    /* LINE */
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    width: 6px;
+    border-radius: 100px;
+    background-color: lightslategrey;
+    transform: translateX(-55%);
+  }
+  /* BOXES */
+  .pathway ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 15px;
+    position: relative;
+  }
+  
+  
+  
+  .pathway ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-15%);
+    transition: box-shadow .2s border-style .2s;
+    transition-duration: 1s;
+  }
+  .pathway ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(15%);
+    transition: box-shadow .2s border-style .2s;
+    transition-duration: 1s;
+  }
+  
+  .pathway ul li:nth-child(odd):hover {
+    box-shadow: -20px 50px 40px rgba(255, 255, 255);
+    border-width: 5px;
+    border-style: solid;
+    border-color: turquoise;
+    background-color: #27272c;
+  }
+  .pathway ul li:nth-child(even):hover {
+    box-shadow: 20px 50px 40px rgba(255, 255, 255);
+    border-width: 5px;
+    border-style: solid;
+    border-color: turquoise;
+    background-color: #27272c;
+  }
+
+  .pathway ul li::after {
+    content: " ";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-color: turquoise;
+    border-width: 5px;
+    border-style: solid;
+    background-color:#27272c;
+    border-radius: 50%;
+  }
+  .pathway ul li:nth-child(odd)::after{
+    right: -12.5%;
+    top: 50%;
+  }
+  .pathway ul li:nth-child(even)::after{
+    left: -12.8%;
+    top: 50%;
+  }
+
+}
+
+.thankyou h2{
+  margin-top: 8%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.thankyou h3{
+  text-align: center;
+  margin-top:3%;
+  font-size: 30px;
+  margin-bottom:5%;
+}
+
+.thankyou a{
+  align-items: center;
+  font-size: 30px;
+  color: lightskyblue;
+}
