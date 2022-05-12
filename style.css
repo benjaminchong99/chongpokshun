@@ -12,6 +12,51 @@ html {
   }  
 
 /************************************************/
+/***************** NOT SO IMPT ******************/
+/************************************************/
+
+#headerstory {
+  text-align: center;
+  font-size: 50px;
+  padding: 40px;
+  margin-top: 7%;
+}
+
+/* button bottom right */
+#goupbutton {
+  display: none; /*Hidden by default*/
+  position: fixed; /* Fixed/sticky position */
+  max-width: 15%;
+  max-height: 15%;
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 100; /* Make sure it does not overlap */
+  border: none; 
+  outline: none; 
+  color: gray; 
+  cursor: pointer; /* Change to mouse pointer on hover */
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+.rounded3 {
+  border-radius: 10px;
+  border: double 8px transparent;
+  background-image: linear-gradient( #ED765E, #FEA858), linear-gradient(to right, #ED765E  , #FEA858);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  width: 90%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#firstline{
+  margin-top:5%;
+}
+
+/************************************************/
 /**************** LOGO AND START ****************/
 /************************************************/
 .headerlogo {
@@ -25,35 +70,36 @@ html {
     margin-top: 3%;
   }
 
-.typewords {
-  margin: 0 auto;
-  /* margin-top: 5%; */
-  border-right: 3px solid rgba(255,255,255,.75);
-  font-size: 50px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(50%);
-}
+  .typewords {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transform: translateY(50%);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(255,255,255,.75);
+    animation: typewriter 2s steps(44) 1s 1 normal both, blinkTextCursor 0.75s steps(44) infinite normal;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .typewords {
+      font-size: 50px;
+    }
+  }
 
-/* Animation */
-.animatedtype{
-    animation: typewriter 2s steps(44) 1s 1 normal both,
-               blinkTextCursor 0.75s steps(44) infinite normal;
-  }
-  @keyframes typewriter{
-    from{width: 0;}
-    to{width: 15em;} /* decides where to stop */
-  }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-  }
+  /* Animation */
+    @keyframes typewriter{
+      from{width: 0;}
+      to{width: 14.5em;} /* decides where to stop */
+    }
+    @keyframes blinkTextCursor{
+      from{border-right-color: rgba(255,255,255,.75);}
+      to{border-right-color: transparent;}
+    }
 
 /************************************************/
 /******************** NAV BAR *******************/
 /************************************************/
-
 .navbar {
     list-style-type: none;
     margin-top: 6%;
@@ -72,14 +118,15 @@ html {
   }
   
   .navbarc {
-    float: left;
+    /* float: left; */
+    text-align: center;
     margin:auto;
   }
-
+  
   .navbarc a {
     color: white;
-    text-align: center;
-    padding: 50px 50px;
+    /* text-align: center; */
+    /* padding: 50px 50px; */
     font-size: 40px;
     font-weight: bold;
     text-decoration: none;
@@ -94,25 +141,30 @@ html {
 /************************************************/
 
 .aboutmemarker{
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* justify-content:center; */
   padding-top: 50px;
 }
 
-.markers {
-  display: none;
-  color: #27272c;
-  margin-bottom: 50px;
-}
-
 #profilepic {
-    max-width: 30%;
-    max-height: 20%;
-    /* display: block; */
-    /* margin-right: auto; */
-    margin-top: 10%;
-    margin-left: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .aboutmemarker{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
   }
+  #profilepic {
+      max-width: 450px;
+      max-height: 450px;
+      margin-top: 100px;
+      margin-left: 30px;
+    }
+}
 
 .description {
   color:rgba(245, 245, 245, 0.775);
@@ -147,8 +199,7 @@ html {
 }
 
 .abtme21 p {
-  min-width: 250px;
-  font-size: 30px;
+  width: 250px;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -157,6 +208,21 @@ html {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .abtme21 p {
+    width: 250px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: double 4px transparent;
+    background-image: linear-gradient( #27272c, #27272c), linear-gradient(to right, #ff512f  , #dd2476);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    text-align: center;
+  }
 }
 /************************************************/
 /******************** EM BH *********************/
@@ -285,51 +351,6 @@ border-color: white;
   width: 85%;
   border-radius: 10px;
 }
-/************************************************/
-/***************** NOT SO IMPT ******************/
-/************************************************/
-
-#headerstory {
-  text-align: center;
-  font-size: 50px;
-  padding: 40px;
-  margin-top: 7%;
-}
-
-/* button bottom right */
-#goupbutton {
-  display: none; /*Hidden by default*/
-  position: fixed; /* Fixed/sticky position */
-  max-width: 15%;
-  max-height: 15%;
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 100; /* Make sure it does not overlap */
-  border: none; 
-  outline: none; 
-  color: gray; 
-  cursor: pointer; /* Change to mouse pointer on hover */
-  padding: 15px; 
-  border-radius: 10px; 
-  font-size: 18px; 
-}
-
-.rounded3 {
-  border-radius: 10px;
-  border: double 8px transparent;
-  background-image: linear-gradient( #ED765E, #FEA858), linear-gradient(to right, #ED765E  , #FEA858);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  width: 90%;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#firstline{
-  margin-top:5%;
-}
-
 /************************************************/
 /**************** PROJECT SHOWCASE **************/
 /************************************************/

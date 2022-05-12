@@ -8,7 +8,7 @@ function scrollToTop(){
 function revealbutton(){
     topbutton = document.getElementById("goupbutton");
     if (document.body.scrollTop>600||document.documentElement.scrollTop>600){
-        topbutton.style.display="block";
+        topbutton.style.display="flex";
     }else{
         topbutton.style.display="none";
     }
