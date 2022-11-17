@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 html {
@@ -404,10 +405,6 @@ border-color: white;
 .showcase{
   padding-top: 50px;
 }
-.projectlist {
-  display: flex;
-  margin: 0 auto;
-}
 
 .projcat {
   font-size: 30px;
@@ -415,48 +412,26 @@ border-color: white;
   margin: 20px;
 }
 
-.projschb {
-  border: 1px solid #FFF44F;
-  border-radius: 10px;
-  margin: 5px;
-  padding: 5px;
-}
-
 .projsch {
   border: 1px solid #EEE600;
   border-radius: 10px;
   margin: 5px;
   padding: 15px;
-  width: 33%;
+  /* width: 33%; */
   transition: box-shadow .5s;
   transition-duration: 1s;
   transition-delay: 0.1s;
 }
 
-.projperb {
-  border: 1px solid #a8e063;
-  border-radius: 10px;
-  background-origin: border-box;
-  background-clip: padding-box, border-box;  border-radius: 10px;
-  margin: 5px;
-  padding: 5px;
-}
 .projper {
   border: 1px solid #56ab2f ;
   border-radius: 10px;
   margin: 5px;
   padding: 15px;
-  width: 33%;
+  /* width: 33%; */
   transition: box-shadow .3s;
   transition-duration: 1s;
   transition-delay: 0.1s;
-}
-
-.projotherb {
-  border: 1px solid lightskyblue;
-  border-radius: 10px;
-  margin: 5px;
-  padding: 5px;
 }
 
 .projother {
@@ -466,28 +441,95 @@ border-color: white;
   border-radius: 10px;
   margin: 5px;
   padding: 15px;
-  width: 33%;
+  /* width: 33%; */
   transition: box-shadow .2s;
   transition-duration: 1s;
 }
 
-.projtitle {
-  font-size: 20px;
-}
+@media only screen and (min-width: 768px) {
 
-.projschb:first-child,
-.projperb:first-child,
-.projotherb:first-child{
-  margin-left: 2%;
-}
+  .projectlist {
+    display: flex;
+    margin: 0 auto;
+  }
 
-.projsch:hover,
-.projper:hover,
-.projother:hover{
-  box-shadow: 0 0 40px rgba(255, 255, 255);
-  background-color:#27272c;
-}
 
+  .projschb {
+    border: 1px solid #FFF44F;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+
+  .projperb {
+    border: 1px solid #a8e063;
+    border-radius: 10px;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;  border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .projotherb {
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .projsch {
+    border: 1px solid #EEE600;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    width: 33%;
+    transition: box-shadow .5s;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+  }
+  
+  .projper {
+    border: 1px solid #56ab2f ;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    width: 33%;
+    transition: box-shadow .3s;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+  }
+  
+  .projother {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 180);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    width: 33%;
+    transition: box-shadow .2s;
+    transition-duration: 1s;
+  }
+  
+
+  .projtitle {
+    font-size: 20px;
+  }
+
+  .projschb:first-child,
+  .projperb:first-child,
+  .projotherb:first-child{
+    margin-left: 2%;
+  }
+
+  .projsch:hover,
+  .projper:hover,
+  .projother:hover{
+    box-shadow: 0 0 40px rgba(255, 255, 255);
+    background-color:#27272c;
+  }
+}
 /************************************************/
 /******************* TIMELINE *******************/
 /************************************************/
