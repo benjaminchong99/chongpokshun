@@ -371,12 +371,12 @@ border-color: white;
 /* PROGRESS BARS */
 #progressbarpy>div {
   background-color: orange;
-  width: 70%;
+  width: 80%;
   border-radius: 10px;
 }
 #progressbarjhs>div {
   background-color: orange;
-  width: 60%;
+  width: 70%;
   border-radius: 10px;
 }
 #progressbarjava>div {
